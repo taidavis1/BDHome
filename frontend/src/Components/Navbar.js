@@ -24,10 +24,10 @@ function Navbar(){
                     <img src={Logo1} alt="" className={!Scroll?"hidden":"w-28 md:w-28 group-hover:opacity-70"}/>
                 </div>
                 <div className={Scroll?"lg:hidden text-3xl cursor-pointer flex items-center text-black space-x-4": "lg:hidden space-x-4 blkock text-3xl cursor-pointer flex items-center text-[#3C6CA8]"}>
-                    <div onClick={() => window.location.href = "tel:9163337077"} className={`${Scroll? "bg-green-400" : "border-0" } p-2 rounded-full`}>
+                    <div onClick={() => window.location.href = "tel:6696996999"} className={`${Scroll? "bg-green-400" : "border-0" } p-2 rounded-full`}>
                         <FontAwesomeIcon className= {`${Scroll? "text-white" : "text-green-400"} flex !text-xl`} icon = {faPhone}/>
                     </div>
-                    <div onClick={(e) => {e.preventDefault(); window.open("https://www.google.com/maps/place/4561+Mack+Rd,+Sacramento,+CA+95823/@38.4753422,-121.4487983,17z/data=!3m1!4b1!4m6!3m5!1s0x809acf7cd6a35395:0xb2223c5c8cb0c9ca!8m2!3d38.4753422!4d-121.4487983!16s%2Fg%2F11bw3zq57f?entry=ttu" , '_blank')}} className={`${Scroll? "" : "border-0" } p-2 rounded-full`}>
+                    <div onClick={(e) => {e.preventDefault(); window.open("https://www.google.com/maps/dir/37.3312986,-120.4933619/1315+Piedmont+Rd,+San+Jose,+CA+95132/@37.3683678,-122.5394276,8z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x808fcdd1d23c37c1:0xb7232544977ba12f!2m2!1d-121.8479968!2d37.4004538?entry=ttu" , '_blank')}} className={`${Scroll? "" : "border-0" } p-2 rounded-full`}>
                         <FontAwesomeIcon className= "flex !text-xl text-sky-400" icon = {faLocationDot}/>
                     </div>
                     <div onClick={() => setClick(!Click)} className={Scroll?"lg:hidden text-3xl cursor-pointer flex items-center text-black space-x-4": "lg:hidden space-x-4 blkock text-3xl cursor-pointer flex items-center text-[#3C6CA8]"}>

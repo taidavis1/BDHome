@@ -13,7 +13,7 @@ function CarouselHome (){
     return (
         <>
             <div className=" flex lg:hidden font-FiraFont bg-[#010a8b] h-screen relative bg-no-repeat w-screen">
-                <div className="absolute flex justify-center top-1/4 w-full px-3 py-5 space-y-5 lg:py-8 md:space-y-6">
+                <div className="absolute flex flex-col justify-center top-1/4 w-full px-3 py-5 space-y-5 lg:py-8 md:space-y-6">
                     <img className=" p-8" src={Logo1} />
                 </div>
             </div>
