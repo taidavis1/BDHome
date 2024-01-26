@@ -8,7 +8,7 @@ import Service from './Views/Services';
 function App() {
   return (
     <main className=' font-FiraFont overflow-hidden'>
-      <Navbar />
+      <Navbar className="z-40" />
       <Routes>
         <Route path = '/' element = {<Home />} />
         <Route path = '/Services' element = {<Service />} />

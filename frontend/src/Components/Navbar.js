@@ -18,7 +18,7 @@ function Navbar(){
     const Icon_Style = {fontSize: '22',};
     return (
         <div className="">
-            <nav className= {Scroll?"bg-[#010a8b] flex justify-between p-4 lg:justify-around lg:py-4 shadow-md w-full fixed top-0 left-0 right-0 z-10 ":
+            <nav className= {Scroll?"bg-[#010a8b] flex justify-between p-4 lg:justify-around lg:py-4 shadow-md w-full fixed top-0 left-0 right-0 z-20 ":
             "flex bg-[#010a8b] text-white justify-between p-4 lg:justify-around lg:py-4 bg-none w-full fixed top-0 left-0 right-0 z-10"}>
                 <div className="flex rounded-full items-center space-x-1 cursor-pointer group">
                     <img src={Logo1} alt="" className={!Scroll?"hidden":"w-28 md:w-28 group-hover:opacity-70"}/>

@@ -34,7 +34,8 @@ module.exports = {
         'blue-test': '#373b4d',
       },
       backgroundImage:{
-        'bg1': "url('/src/img/bg1.png')"
+        'bg1': "url('/src/img/bg1.png')",
+        'bgservices': "url('/src/img/img-services/framing-house.png')"
       }
     },
   },
