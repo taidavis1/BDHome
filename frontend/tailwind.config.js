@@ -33,7 +33,8 @@ module.exports = {
         'blue-test': '#373b4d',
       },
       backgroundImage:{
-        'bg1': "url('/src/img/bg1.png')"
+        'bg1': "url('/src/img/bg1.png')",
+        'bg2': "url('/src/img/bg_porfolio.png')",
       }
     },
   },

@@ -13,11 +13,31 @@ import test2 from "../img/test2.jpg";
 
 export default function Home(){
     return (
-        <section className="relative space-y-4">
+        <section className="relative">
             <CarouselHome />
-            <div className=" lg:p-12 p-5 space-y-4">
-                <div className=" flex flex-col justify-center text-center">
-                    <h1 className="uppercase text-3xl lg:text-4xl">Our Services</h1>
+            <div className="bg-[#fefeff] text-black p-5 space-y-2 lg:space-y-5 lg:p-12">
+                <div className=" flex mt-4 flex-col justify-center text-center">
+                    <h1 className="uppercase text-3xl lg:text-4xl">About Us</h1>
+                    <span className=" font-thin lg:text-xl">BD Home Group, Inc New Construction</span>
+                </div>
+                <div className="mx-auto max-w-screen-xl cursor-pointer">
+                    <div className=" flex space-y-2 font-sans lg:space-y-4 items-center lg:text-xl text-lg flex-col justify-center text-center">
+                        <div className="lg:w-3/4">
+                            <span className="">
+                                Leading reputable construction company in San Jose and the Bay Area
+                                Specializing in building new houses, ADUs, and additions
+                                Also builds new restaurants, nail salons, hair salons, and bubble tea shops
+                                BD Home Group is a fully licensed and certified construction company operating in various cities, particularly always insured
+                                Free consultation and advice for our customers.
+                            </span>
+                        </div>
+                        <span className=" font-bold">Call: 6-69-699-6999 or 657-535-6789</span>
+                    </div>
+                </div>
+            </div>
+            <div className="bg-[#010a8b] text-white lg:p-12 p-5 space-y-4">
+                <div className=" flex mt-4 flex-col justify-center text-center">
+                    <h1 className="uppercase  text-3xl lg:text-4xl">Our Services</h1>
                     <span className=" font-thin lg:text-xl">Years of Experience</span>
                 </div>
                 <div className="lg:p-4 p-2 mx-auto max-w-screen-xl cursor-pointer">
@@ -51,19 +71,19 @@ export default function Home(){
                 </div>
             </div>
 
-            <div className="bg-[#010a8b] text-white p-5 space-y-6 lg:space-y-3 lg:p-12">
-                <div className=" flex flex-col justify-center text-center">
+            <div className="bg-[#fefeff] p-5 space-y-6 lg:space-y-3 lg:p-12">
+                <div className=" flex text-black mt-4 flex-col justify-center text-center">
                     <h1 className="uppercase text-3xl lg:text-4xl">FEATURED WORK</h1>
                     <span className=" font-thin lg:text-xl">We Proud Of Our Work</span>
                 </div>
-                <div className="lg:p-4 mx-auto max-w-screen-xl cursor-pointer">
+                <div className="lg:p-4 text-white mx-auto max-w-screen-xl cursor-pointer">
                     <div className=" grid ml-0 lg:ml-6 lg:grid-cols-3 lg:gap-0 gap-6 lg:place-items-center">
                         <div className="lg:p-4">
                             <div className=" flex sticky lg:hidden">
                                 <img className="" src={bathroom} />
                                 <div className=" absolute p-1 inset-0 z-10 flex flex-col justify-end opacity-100">
                                     <div className="ml-3 text-xl">
-                                        <h1>House Remodel</h1>
+                                        <h1>San Jose</h1>
                                     </div>
                                     <div className=" flex ml-4 text-sm items-center space-x-1">
                                         <span className="">View Porfolio</span>
@@ -75,9 +95,9 @@ export default function Home(){
                                 <img className="" src={bathroom} />
                                 <div className=" absolute p-8 inset-0 z-10 bg-black flex flex-col justify-end opacity-0 hover:opacity-100 ease-linear duration-500 transition-all bg-opacity-50">
                                     <div className="ml-3 text-2xl">
-                                        <h1>House Remodel</h1>
+                                        <h1>San Jose</h1>
                                     </div>
-                                    <div className=" flex ml-4 text-lg items-center space-x-1">
+                                    <div className=" flex ml-4 text-lg items-center font-thin space-x-1">
                                         <span className="">View Porfolio</span>
                                         <FontAwesomeIcon className=" text-sm text-gray-200" icon={faForward} />
                                     </div>
@@ -139,27 +159,27 @@ export default function Home(){
                     </div>
                 </div>
                 <div className="flex justify-center">
-                    <button className= "hover:bg-[#e6b54e] group cursor-pointer px-4 w-[250px] py-3 border-[#e6b54e] border-2 capitalize">
+                    <button className= "hover:bg-[#e6b54e] hover:text-white group cursor-pointer px-4 w-[250px] py-3 border-[#e6b54e] border-2 capitalize">
                         View Porfolio
                     </button>
                 </div>
             </div>
 
-            <div className="p-5 lg:space-y-6 space-y-4 lg:p-12">
-                <div className=" flex flex-col justify-center text-center">
+            <div className="p-5 lg:space-y-6 bg-[#010a8b] text-white space-y-4 lg:p-12">
+                <div className="flex flex-col mt-4 justify-center text-center">
                     <h1 className="uppercase text-3xl lg:text-4xl">Our Customer Review</h1>
                     <span className=" font-thin lg:text-xl">Don't Just Take Our Words</span>
                 </div>
                 <div className="lg:p-4 mx-auto max-w-screen-xl cursor-pointer">
-                    <div className=" grid lg:mt-10 ml-0 lg:ml-6 lg:grid-cols-2 gap-4 lg:gap-8 lg:place-items-center">
-                        <div className="shadow-md p-8 lg:p-12">
+                    <div className=" grid lg:mt-10 ml-0 lg:ml-6 lg:grid-cols-2 gap-6 lg:gap-8 lg:place-items-center">
+                        <div className="shadow-md border-2 p-8 lg:p-12">
                             <div className=" flex lg:space-y-8 space-y-6 flex-col sticky items-center justify-center text-center">
                                 <img src={test1} className=" w-20 lg:absolute lg:-top-24 rounded-full" />
                                 <div className=" flex flex-col">
                                     <h1 className=" text-2xl">Jane Doe</h1>
                                     <span className=" font-thin lg:text-md">Home Owner</span>
                                 </div>
-                                <div className=" text-gray-500">
+                                <div className="">
                                     <span>
                                         Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however 
                                         a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar. The Big Oxmox advised her not to do so, 
@@ -168,14 +188,14 @@ export default function Home(){
                                 </div>
                             </div>
                         </div>
-                        <div className="shadow-md p-8 lg:p-12">
+                        <div className="shadow-md border-2 p-8 lg:p-12">
                             <div className=" flex lg:space-y-8 space-y-6 flex-col sticky items-center justify-center text-center">
                                 <img src={test2} className=" w-20 lg:absolute lg:-top-24 rounded-full" />
                                 <div className=" flex flex-col">
                                     <h1 className=" text-2xl">Jane Doe</h1>
                                     <span className=" font-thin lg:text-md">Home Owner</span>
                                 </div>
-                                <div className=" text-gray-500">
+                                <div className="">
                                     <span>
                                         Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however 
                                         a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar. The Big Oxmox advised her not to do so, 

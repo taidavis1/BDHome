@@ -1,5 +1,5 @@
 import {React , useState} from "react";
-import Logo1 from "../img/Logo1.png";
+import Logo1 from "../img/Logo.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {faFacebookF , faInstagram , faGoogle , faYelp} from "@fortawesome/free-brands-svg-icons";
 import {faBarsStaggered ,faXmark , faPhone , faLocationDot} from "@fortawesome/free-solid-svg-icons"
@@ -45,7 +45,7 @@ function Navbar(){
                     <a className="flex  " href = "/Services">
                         Services
                     </a>
-                    <a className="flex  " href = "/Contact">
+                    <a className="flex  " href = "/Porfolio">
                        Porfolio
                     </a>
                 </div>
@@ -70,7 +70,7 @@ function Navbar(){
                     <div className=" space-y-16  md:space-y-24 flex flex-col text-lg mt-12">
                         <a onClick={() => setClick(!Click)} className="" href="/">Home</a>
                         <a onClick={() => setClick(!Click)} className="" href="/Services">Services</a>
-                        <a onClick={() => setClick(!Click)} className=" " href="/Staff">Porfolio</a>
+                        <a onClick={() => setClick(!Click)} className=" " href="/Porfolio">Porfolio</a>
                         <button
                             className="group  transition ease-out duration-200 cursor-pointer px-4 py-3 border-[#e6b54e] border-2 capitalize tracking-wide">
                             <a className = "group-hover:text-white">Contact Us</a>

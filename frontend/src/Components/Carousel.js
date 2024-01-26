@@ -11,7 +11,7 @@ function CarouselHome (){
     },[]);
     
     return (
-        <>
+        <div className="">
             <div className=" flex lg:hidden font-FiraFont bg-[#010a8b] h-screen relative bg-no-repeat w-screen">
                 <div className="absolute flex flex-col justify-center top-1/4 w-full px-3 py-5 space-y-5 lg:py-8 md:space-y-6">
                     <img className="" src={Logo1} />
@@ -89,7 +89,7 @@ function CarouselHome (){
                     <span className="!absolute !-m-px !h-px !w-px !overflow-hidden !whitespace-nowrap !border-0 !p-0 ![clip:rect(0,0,0,0)]">Next</span>
                 </button>
             </div>
-        </>
+        </div>
     );
 };
 export default CarouselHome;
