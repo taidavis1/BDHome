@@ -65,7 +65,7 @@ function Navbar(){
                 </div>
             </nav>
             {Click?
-                <nav className="overflow-hidden mt-4 space-y-12 md:space-y-24 top-16 md:top-24 fixed p-6 w-screen h-screen bg-[#010a8b] 
+                <nav className="overflow-hidden mt-4 space-y-12 md:space-y-24 top-24 md:top-24 fixed p-6 w-screen h-screen bg-[#010a8b] 
                 transition duration-700 ease-out lg:hidden left-0 right-0 z-20  mx-auto  text-white">
                     <div className=" space-y-16  md:space-y-24 flex flex-col text-lg mt-12">
                         <a onClick={() => setClick(!Click)} className="" href="/">Home</a>

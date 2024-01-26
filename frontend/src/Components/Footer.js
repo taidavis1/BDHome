@@ -55,7 +55,7 @@ export default function Footer(){
                         </div>
                         <div className="text-center sm:text-left">
                             <p className="text-lg font-medium text-gray-900">Contact Us</p>
-                            <ul className="mt-3 md:space-y-2 mailto:nguyenthuyan1706@gmail.com-5 text-sm">
+                            <ul className="mt-3 md:space-y-2 mailto:contact@bdhomegroup.us text-sm">
                                 <li>
                                     <a className="flex items-center justify-center gap-1.5 ltr:sm:justify-start rtl:sm:justify-end" href="/">
                                         <svg
@@ -72,14 +72,14 @@ export default function Footer(){
                                             d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
                                             />
                                         </svg>
-                                        <a href="mailto:nicespa.square@gmail.com" className="flex-1 text-gray-700">homegroup.@gmail.com</a>
+                                        <a href="mailto:contact@bdhomegroup.us" className="flex-1 text-gray-700">contact@bdhomegroup.us</a>
                                     </a>
                                 </li>
                                 <li>
                                     <a className="flex items-center justify-center gap-1.5 ltr:sm:justify-start rtl:sm:justify-end" href="tel:6696996999">
                                         <svg
                                             xmlns="http://www.w3.org/2000/svg"
-                                            className="h-5 w-5 shrink-0 text-gray-900"
+                                            className="h-5 w-5 shrink-0 text-rose-300"
                                             fill="none"
                                             viewBox="0 0 24 24"
                                             stroke="currentColor"

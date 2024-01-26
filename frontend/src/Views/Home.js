@@ -21,31 +21,21 @@ export default function Home(){
                     <span className=" font-thin lg:text-xl">Years of Experience</span>
                 </div>
                 <div className="lg:p-4 p-2 mx-auto max-w-screen-xl cursor-pointer">
-                    <div className=" grid ml-0 lg:ml-6 lg:grid-cols-3 gap-6 lg:gap-12 place-items-center">
-                        <div className="lg:p-4">
+                    <div className=" grid ml-0 lg:ml-6 lg:grid-cols-2 gap-6 lg:gap-12 place-items-center">
+                        <div className="lg:p-8">
                             <div className=" text-center space-y-4 flex flex-col justify-center">
                                 <img className="" src={icon1} />
-                                <h1>CONSTRUCTION</h1>
+                                <h1 className=" uppercase">New construction for resident</h1>
                                 <span>Far far away, behind the word mountains, far 
                                     from the countries Vokalia and Consonantia, there live the blind texts. 
                                     Separated they live in Bookmarksgrove.
                                 </span>
                             </div>
                         </div>
-                        <div className="lg:p-4">
+                        <div className="lg:p-8">
                             <div className=" text-center space-y-4 flex flex-col justify-center">
                                 <img className="" src={icon2} />
-                                <h1>CONSTRUCTION</h1>
-                                <span>Far far away, behind the word mountains, far 
-                                    from the countries Vokalia and Consonantia, there live the blind texts. 
-                                    Separated they live in Bookmarksgrove.
-                                </span>
-                            </div>
-                        </div>
-                        <div className="lg:p-4">
-                            <div className=" text-center space-y-4 flex flex-col justify-center">
-                                <img className="" src={icon3} />
-                                <h1>CONSTRUCTION</h1>
+                                <h1 className=" uppercase">New construction for commercial</h1>
                                 <span>Far far away, behind the word mountains, far 
                                     from the countries Vokalia and Consonantia, there live the blind texts. 
                                     Separated they live in Bookmarksgrove.
