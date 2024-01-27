@@ -21,7 +21,7 @@ function Navbar(){
             <nav className= {Scroll?"bg-[#010a8b] flex justify-between p-4 lg:justify-around lg:py-4 shadow-md w-full fixed top-0 left-0 right-0 z-10 ":
             "flex bg-[#010a8b] text-white justify-between p-4 lg:justify-around lg:py-4 bg-none w-full fixed top-0 left-0 right-0 z-10"}>
                 <div className="flex rounded-full items-center space-x-1 cursor-pointer group">
-                    <img src={Logo1} alt="" className={!Scroll?"hidden":"w-28 md:w-28 group-hover:opacity-70"}/>
+                    <img src={Logo1} alt="" className={!Scroll?"lg:hidden w-20":"w-28 md:w-28 group-hover:opacity-70"}/>
                 </div>
                 <div className={Scroll?"lg:hidden text-3xl cursor-pointer flex items-center text-black space-x-4": "lg:hidden space-x-4 blkock text-3xl cursor-pointer flex items-center text-[#3C6CA8]"}>
                     <div onClick={() => window.location.href = "tel:6696996999"} className={`${Scroll? "bg-green-400" : "border-0" } p-2 rounded-full`}>
@@ -65,7 +65,7 @@ function Navbar(){
                 </div>
             </nav>
             {Click?
-                <nav className="overflow-hidden mt-4 space-y-12 md:space-y-24 top-24 md:top-24 fixed p-6 w-screen h-screen bg-[#010a8b] 
+                <nav className="overflow-hidden space-y-12 md:space-y-24 top-24 md:top-24 fixed p-6 w-screen h-screen bg-[#010a8b] 
                 transition duration-700 ease-out lg:hidden left-0 right-0 z-20  mx-auto  text-white">
                     <div className=" space-y-16  md:space-y-24 flex flex-col text-lg mt-12">
                         <a onClick={() => setClick(!Click)} className="" href="/">Home</a>
