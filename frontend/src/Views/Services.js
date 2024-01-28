@@ -5,28 +5,46 @@ import framing from "../img/img-services/framing-house.png";
 
 export default function Service(){
     return (
-        <section className="bg-white border-solid border-4 border-black w-full">
-            <div className=" bg-bgservices bg-center bg-cover services pt-96 relative border-solid border-2 border-black">
-                
-                <h1 className="absolute top-2/3 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-10 text-white p-4 text-4xl w-50 ">
-                    Our services
-                </h1>
+        <section className="bg-white w-full space-y-8">
+            <div className="w-screen h-screen pb-12 bg-bgservices relative bg-center bg-no-repeat bg-cover lg:pb-40">
+				<div className="flex bg-black items-center bg-opacity-25 h-screen w-full justify-center tracking-wide cursor-pointer text-white text-4xl lg:text-6xl italic ">
+					<h2 className=" lg:mt-44 mt-28">Our Services</h2>
+				</div>
             </div>
-            <div className="border-solid border-red-500 bg-red-100 border-4 grid lg:grid-cols-2 max-w-screen-full mx-auto p-4" style={{height: "1800px"}}>
-                <div className="border-solid border-green-500 border-4 h-96 p-10 text-center text-xl mr-5">
-                    <div className="bg-bgservices h-48">
-                        <h1></h1>
+            <div className=" grid lg:grid-cols-2 max-w-screen-xl mx-auto p-4 gap-4">
+
+                <div className="border-solid border-black border-2 p-10 py-64text-center text-xl ">
+
+                    <img src={framing} className="" alt="logo"/>
+
+                    <div className=" flex flex-col justify-center text-center items-center">
+                            <h1 className="mt-12 mb-4 font-bold"> Residential Property Constuction</h1>
+
+                            <h2> Merging calming Swedish massage movements with gentle stone warmth, this distinctive therapy genuinely elevates massage sessions to tranquil levels of unprecedented remedial efficacy. 
+                                Suitable for those experiencing stress or muscle discomfort, it offers a restorative and relaxing journey.</h2>
+                            <div className=" border-solid border-2 border-black flex flex-col justify-center items-center mt-8  h-16 w-48">
+                                <h1 className=" "> Explore Options</h1>
+                            </div>
+                            
+
                     </div>
-                    <h1> Residential Property Constuction</h1>
-
-                    <h2> Merging calming Swedish massage movements with gentle stone warmth, this distinctive therapy genuinely elevates massage sessions to tranquil levels of unprecedented remedial efficacy. 
-                        Suitable for those experiencing stress or muscle discomfort, it offers a restorative and relaxing journey.</h2>
                 </div>
-                <div className="border-solid border-4 border-blue-500 h-96 p-10 text-center text-xl ml-5">
-                <h1> marcock </h1>
-                <div className="border-solid border-black border-4 p-10">
+                <div className="border-solid border-2 border-black p-10 text-center text-xl ">
+                    
+                    <img src={framing} className="" alt="logo"/>
 
-                </div>
+                    <div className=" flex flex-col justify-center text-center items-center">
+                        <h1 className="mt-12 mb-4 font-bold"> Commercial Property Constuction</h1>
+
+                        <h2> Merging calming Swedish massage movements with gentle stone warmth, this distinctive therapy genuinely elevates massage sessions to tranquil levels of unprecedented remedial efficacy. 
+                            Suitable for those experiencing stress or muscle discomfort, it offers a restorative and relaxing journey.</h2>
+                        <div className=" border-solid border-2 border-black flex flex-col justify-center items-center mt-8  h-16 w-48">
+                            <h1 className=" "> Explore Options</h1>
+                    </div>
+                        
+
+                    </div>
+                        
                 </div>
             </div>
         </section>

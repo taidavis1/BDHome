@@ -2,7 +2,6 @@ import React from "react";
 import CarouselHome from "../Components/Carousel";
 import icon1 from "../img/shovel_icon.png";
 import icon2 from "../img/hammer_icon.png";
-import icon3 from "../img/ladder_icon.png";
 import bathroom from "../img/bathroom.jpg";
 import newModel from "../img/new_model.jpg";
 import houseMove from "../img/house_move.jpg";
@@ -12,6 +11,11 @@ import test1 from "../img/test1.jpg";
 import test2 from "../img/test2.jpg";
 
 export default function Home(){
+
+    const ChangeUrl = (name) => {
+        window.location.href = (`/Porfolio/#${name}`);
+    }
+
     return (
         <section className="relative">
             <CarouselHome />
@@ -44,7 +48,7 @@ export default function Home(){
                     <div className=" grid ml-0 lg:ml-6 lg:grid-cols-2 gap-6 lg:gap-12 place-items-center">
                         <div className="lg:p-8">
                             <div className=" text-center space-y-4 flex flex-col justify-center">
-                                <img className="" src={icon1} />
+                                <img alt="#" className="" src={icon1} />
                                 <h1 className=" uppercase">New construction for resident</h1>
                                 <span>Far far away, behind the word mountains, far 
                                     from the countries Vokalia and Consonantia, there live the blind texts. 
@@ -54,7 +58,7 @@ export default function Home(){
                         </div>
                         <div className="lg:p-8">
                             <div className=" text-center space-y-4 flex flex-col justify-center">
-                                <img className="" src={icon2} />
+                                <img alt="#" className="" src={icon2} />
                                 <h1 className=" uppercase">New construction for commercial</h1>
                                 <span>Far far away, behind the word mountains, far 
                                     from the countries Vokalia and Consonantia, there live the blind texts. 
@@ -79,8 +83,8 @@ export default function Home(){
                 <div className="lg:p-4 text-white mx-auto max-w-screen-xl cursor-pointer">
                     <div className=" grid ml-0 lg:ml-6 lg:grid-cols-3 lg:gap-0 gap-6 lg:place-items-center">
                         <div className="lg:p-4">
-                            <div className=" flex sticky lg:hidden">
-                                <img className="" src={bathroom} />
+                            <div onClick={() => ChangeUrl("San Jose")} className=" flex sticky lg:hidden">
+                                <img alt="#" className="" src={bathroom} />
                                 <div className=" absolute p-1 inset-0 z-10 flex flex-col justify-end opacity-100">
                                     <div className="ml-3 text-xl">
                                         <h1>San Jose</h1>
@@ -91,8 +95,8 @@ export default function Home(){
                                     </div>
                                 </div>
                             </div>
-                            <div className="relative lg:block hidden">
-                                <img className="" src={bathroom} />
+                            <div onClick={() => ChangeUrl("San Jose")} className="sticky lg:block hidden">
+                                <img alt="#" className="" src={bathroom} />
                                 <div className=" absolute p-8 inset-0 z-10 bg-black flex flex-col justify-end opacity-0 hover:opacity-100 ease-linear duration-500 transition-all bg-opacity-50">
                                     <div className="ml-3 text-2xl">
                                         <h1>San Jose</h1>
@@ -106,7 +110,7 @@ export default function Home(){
                         </div>
                         <div className="lg:p-4">
                             <div className=" flex sticky lg:hidden">
-                                <img className="" src={newModel} />
+                                <img alt="#" className="" src={newModel} />
                                 <div className=" absolute p-1 inset-0 z-10 flex flex-col justify-end opacity-100">
                                     <div className="ml-3 text-xl">
                                         <h1>House Remodel</h1>
@@ -117,8 +121,8 @@ export default function Home(){
                                     </div>
                                 </div>
                             </div>
-                            <div className="relative lg:block hidden">
-                                <img className="" src={newModel} />
+                            <div className="sticky lg:block hidden">
+                                <img  alt="#" className="" src={newModel} />
                                 <div className=" absolute p-8 inset-0 z-10 bg-black flex flex-col justify-end opacity-0 hover:opacity-100 ease-linear duration-500 transition-all bg-opacity-50">
                                     <div className="ml-3 text-2xl">
                                         <h1>House Remodel</h1>
@@ -132,7 +136,7 @@ export default function Home(){
                         </div>
                         <div className="lg:p-4">
                             <div className=" flex sticky lg:hidden">
-                                <img className="" src={houseMove} />
+                                <img alt="#" className="" src={houseMove} />
                                 <div className=" absolute p-1 inset-0 z-10 flex flex-col justify-end opacity-100">
                                     <div className="ml-3 text-xl">
                                         <h1>House Remodel</h1>
@@ -143,8 +147,8 @@ export default function Home(){
                                     </div>
                                 </div>
                             </div>
-                            <div className="relative lg:block hidden">
-                                <img className="" src={houseMove} />
+                            <div className="sticky lg:block hidden">
+                                <img  alt="#" className="" src={houseMove} />
                                 <div className=" absolute p-8 inset-0 z-10 bg-black flex flex-col justify-end opacity-0 hover:opacity-100 ease-linear duration-500 transition-all bg-opacity-50">
                                     <div className="ml-3 text-2xl">
                                         <h1>House Remodel</h1>
@@ -159,7 +163,7 @@ export default function Home(){
                     </div>
                 </div>
                 <div className="flex justify-center">
-                    <button className= "hover:bg-[#e6b54e] hover:text-white group cursor-pointer px-4 w-[250px] py-3 border-[#e6b54e] border-2 capitalize">
+                    <button onClick={() => ChangeUrl('')} className= "hover:bg-[#e6b54e] hover:text-white group cursor-pointer px-4 w-[250px] py-3 border-[#e6b54e] border-2 capitalize">
                         View Porfolio
                     </button>
                 </div>
@@ -174,7 +178,7 @@ export default function Home(){
                     <div className=" grid lg:mt-10 ml-0 lg:ml-6 lg:grid-cols-2 gap-6 lg:gap-8 lg:place-items-center">
                         <div className="shadow-md border-2 p-8 lg:p-12">
                             <div className=" flex lg:space-y-8 space-y-6 flex-col sticky items-center justify-center text-center">
-                                <img src={test1} className=" w-20 lg:absolute lg:-top-24 rounded-full" />
+                                <img alt="#" src={test1} className=" w-20 lg:absolute lg:-top-24 rounded-full" />
                                 <div className=" flex flex-col">
                                     <h1 className=" text-2xl">Jane Doe</h1>
                                     <span className=" font-thin lg:text-md">Home Owner</span>
@@ -190,7 +194,7 @@ export default function Home(){
                         </div>
                         <div className="shadow-md border-2 p-8 lg:p-12">
                             <div className=" flex lg:space-y-8 space-y-6 flex-col sticky items-center justify-center text-center">
-                                <img src={test2} className=" w-20 lg:absolute lg:-top-24 rounded-full" />
+                                <img alt="#" src={test2} className=" w-20 lg:absolute lg:-top-24 rounded-full" />
                                 <div className=" flex flex-col">
                                     <h1 className=" text-2xl">Jane Doe</h1>
                                     <span className=" font-thin lg:text-md">Home Owner</span>
