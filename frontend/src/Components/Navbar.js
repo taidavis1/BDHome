@@ -1,7 +1,7 @@
 import {React , useState} from "react";
 import Logo1 from "../img/Logo.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {faFacebookF , faInstagram , faGoogle , faYelp} from "@fortawesome/free-brands-svg-icons";
+import {faFacebookF , faInstagram} from "@fortawesome/free-brands-svg-icons";
 import {faBarsStaggered ,faXmark , faPhone , faLocationDot} from "@fortawesome/free-solid-svg-icons"
 
 function Navbar(){

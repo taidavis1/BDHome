@@ -1,7 +1,7 @@
 import React, { useState,  useEffect } from "react";
 import porfolio from "../Components/Data.js";
 import {Gallery , Item, useGallery} from "react-photoswipe-gallery";
-import { faArrowDown, faArrowUp, faForward, faXmark } from "@fortawesome/free-solid-svg-icons";
+import { faArrowDown, faForward, faXmark } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import 'photoswipe/dist/photoswipe.css';
 
@@ -55,10 +55,10 @@ function Porfolio (){
 
     return(
         <section className="lg:space-y-8 space-y-5 overflow-hidden">
-            <div className=" pt-60 pb-12 bg-bg2 relative bg-center bg-no-repeat bg-cover lg:pb-40">
-                <div className=" absolute bottom-1/4 left-1/2 tracking-wide cursor-pointer text-white text-2xl lg:text-4xl italic ">
-                    <h2>Our Porfolio</h2>
-                </div>
+            <div className="w-screen h-screen pb-12 bg-bg2 relative bg-center bg-no-repeat bg-cover lg:pb-40">
+				<div className="flex bg-black items-center bg-opacity-25 h-screen w-full justify-center tracking-wide cursor-pointer text-white text-4xl lg:text-6xl italic ">
+					<h2 className=" lg:mt-44 mt-28">Our Porfolio</h2>
+				</div>
             </div>
 			{data.length === 0? 
 				(

@@ -48,7 +48,7 @@ export default function Home(){
                     <div className=" grid ml-0 lg:ml-6 lg:grid-cols-2 gap-6 lg:gap-12 place-items-center">
                         <div className="lg:p-8">
                             <div className=" text-center space-y-4 flex flex-col justify-center">
-                                <img className="" src={icon1} />
+                                <img alt="#" className="" src={icon1} />
                                 <h1 className=" uppercase">New construction for resident</h1>
                                 <span>Far far away, behind the word mountains, far 
                                     from the countries Vokalia and Consonantia, there live the blind texts. 
@@ -58,7 +58,7 @@ export default function Home(){
                         </div>
                         <div className="lg:p-8">
                             <div className=" text-center space-y-4 flex flex-col justify-center">
-                                <img className="" src={icon2} />
+                                <img alt="#" className="" src={icon2} />
                                 <h1 className=" uppercase">New construction for commercial</h1>
                                 <span>Far far away, behind the word mountains, far 
                                     from the countries Vokalia and Consonantia, there live the blind texts. 
@@ -84,7 +84,7 @@ export default function Home(){
                     <div className=" grid ml-0 lg:ml-6 lg:grid-cols-3 lg:gap-0 gap-6 lg:place-items-center">
                         <div className="lg:p-4">
                             <div onClick={() => ChangeUrl("San Jose")} className=" flex sticky lg:hidden">
-                                <img className="" src={bathroom} />
+                                <img alt="#" className="" src={bathroom} />
                                 <div className=" absolute p-1 inset-0 z-10 flex flex-col justify-end opacity-100">
                                     <div className="ml-3 text-xl">
                                         <h1>San Jose</h1>
@@ -96,7 +96,7 @@ export default function Home(){
                                 </div>
                             </div>
                             <div onClick={() => ChangeUrl("San Jose")} className="sticky lg:block hidden">
-                                <img className="" src={bathroom} />
+                                <img alt="#" className="" src={bathroom} />
                                 <div className=" absolute p-8 inset-0 z-10 bg-black flex flex-col justify-end opacity-0 hover:opacity-100 ease-linear duration-500 transition-all bg-opacity-50">
                                     <div className="ml-3 text-2xl">
                                         <h1>San Jose</h1>
@@ -110,7 +110,7 @@ export default function Home(){
                         </div>
                         <div className="lg:p-4">
                             <div className=" flex sticky lg:hidden">
-                                <img className="" src={newModel} />
+                                <img alt="#" className="" src={newModel} />
                                 <div className=" absolute p-1 inset-0 z-10 flex flex-col justify-end opacity-100">
                                     <div className="ml-3 text-xl">
                                         <h1>House Remodel</h1>
