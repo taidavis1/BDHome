@@ -11,11 +11,11 @@ export default function Footer(){
                             <img alt ="#" className="md:w-28 hidden md:flex" src={Logo} />
                         </div> 
                         <p className="mt-4 max-w-md tracking-wide leading-relaxed text-gray-500 sm:max-w-xs sm:text-left">
-                            Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however 
-                            a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar. The Big Oxmox advised her not to do so,
-                            because there were thousands of bad Commas, wild Question Marks and devious Semikoli, but the Little Blind Text didn’t listen.
+                            Leading reputable construction company in San Jose and the Bay Area Specializing in building new houses, ADUs, and additions 
+                            Also builds new restaurants, nail salons, hair salons, and bubble tea shops BD Home Group is a fully licensed and certified construction 
+                            company operating in various cities, particularly always insured Free consultation and advice for our customers.
                         </p>
-                
+                        
                         <ul className="mt-8 flex justify-center gap-6 md:gap-8">
                             <li className="">
                                 <a href="https://www.facebook.com/profile.php?id=61552561621667" target="_blank" className="text-teal-700 transition hover:text-teal-700/75">
@@ -55,7 +55,7 @@ export default function Footer(){
                         </div>
                         <div className="text-center sm:text-left">
                             <p className="text-lg font-medium text-gray-900">Contact Us</p>
-                            <ul className="mt-3 md:space-y-2 mailto:nguyenthuyan1706@gmail.com-5 text-sm">
+                            <ul className="mt-3 md:space-y-2 mailto:contact@bdhomegroup.us text-sm">
                                 <li>
                                     <a className="flex items-center justify-center gap-1.5 ltr:sm:justify-start rtl:sm:justify-end" href="/">
                                         <svg
@@ -72,14 +72,14 @@ export default function Footer(){
                                             d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
                                             />
                                         </svg>
-                                        <a href="mailto:nicespa.square@gmail.com" className="flex-1 text-gray-700">homegroup.@gmail.com</a>
+                                        <a href="mailto:contact@bdhomegroup.us" className="flex-1 text-gray-700">contact@bdhomegroup.us</a>
                                     </a>
                                 </li>
                                 <li>
                                     <a className="flex items-center justify-center gap-1.5 ltr:sm:justify-start rtl:sm:justify-end" href="tel:6696996999">
                                         <svg
                                             xmlns="http://www.w3.org/2000/svg"
-                                            className="h-5 w-5 shrink-0 text-gray-900"
+                                            className="h-5 w-5 shrink-0 text-rose-300"
                                             fill="none"
                                             viewBox="0 0 24 24"
                                             stroke="currentColor"

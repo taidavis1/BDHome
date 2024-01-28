@@ -1,5 +1,5 @@
 import {React , useState} from "react";
-import Logo1 from "../img/Logo1.png";
+import Logo1 from "../img/Logo.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {faFacebookF , faInstagram , faGoogle , faYelp} from "@fortawesome/free-brands-svg-icons";
 import {faBarsStaggered ,faXmark , faPhone , faLocationDot} from "@fortawesome/free-solid-svg-icons"
@@ -45,7 +45,7 @@ function Navbar(){
                     <a className="flex  " href = "/Services">
                         Services
                     </a>
-                    <a className="flex  " href = "/Contact">
+                    <a className="flex  " href = "/Porfolio">
                        Porfolio
                     </a>
                 </div>
@@ -65,12 +65,12 @@ function Navbar(){
                 </div>
             </nav>
             {Click?
-                <nav className="overflow-hidden mt-4 space-y-12 md:space-y-24 top-16 md:top-24 fixed p-6 w-screen h-screen bg-[#010a8b] 
+                <nav className="overflow-hidden mt-4 space-y-12 md:space-y-24 top-24 md:top-24 fixed p-6 w-screen h-screen bg-[#010a8b] 
                 transition duration-700 ease-out lg:hidden left-0 right-0 z-20  mx-auto  text-white">
                     <div className=" space-y-16  md:space-y-24 flex flex-col text-lg mt-12">
                         <a onClick={() => setClick(!Click)} className="" href="/">Home</a>
                         <a onClick={() => setClick(!Click)} className="" href="/Services">Services</a>
-                        <a onClick={() => setClick(!Click)} className=" " href="/Staff">Porfolio</a>
+                        <a onClick={() => setClick(!Click)} className=" " href="/Porfolio">Porfolio</a>
                         <button
                             className="group  transition ease-out duration-200 cursor-pointer px-4 py-3 border-[#e6b54e] border-2 capitalize tracking-wide">
                             <a className = "group-hover:text-white">Contact Us</a>

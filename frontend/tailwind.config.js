@@ -5,7 +5,6 @@ module.exports = {
   content: [
     "./src/**/*.{js,jsx,ts,tsx}",
     "./node_modules/tw-elements/dist/js/**/*.js",
-    "./node_modules/react-tailwindcss-datepicker/dist/index.esm.js",
   ],
   theme: {
     extend: {
@@ -35,7 +34,8 @@ module.exports = {
       },
       backgroundImage:{
         'bg1': "url('/src/img/bg1.png')",
-        'bgservices': "url('/src/img/img-services/framing-house.png')"
+        'bgservices': "url('/src/img/img-services/framing-house.png')",
+        'bg2': "url('/src/img/bg_porfolio.png')",
       }
     },
   },
