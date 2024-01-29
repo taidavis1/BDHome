@@ -1,9 +1,13 @@
-import React from "react";
+import {React , useState} from "react";
 
 import framing from "../img/img-services/framing-house.png";
 
+import Button from "../Components/Button.js"
 
 export default function Service(){
+
+    const [Click , setClick] = useState(false);
+
     return (
         <section className="bg-white w-full space-y-8">
             <div className="w-screen h-screen pb-12 bg-bgservices relative bg-center bg-no-repeat bg-cover lg:pb-40">
@@ -22,9 +26,9 @@ export default function Service(){
 
                             <h2> Merging calming Swedish massage movements with gentle stone warmth, this distinctive therapy genuinely elevates massage sessions to tranquil levels of unprecedented remedial efficacy. 
                                 Suitable for those experiencing stress or muscle discomfort, it offers a restorative and relaxing journey.</h2>
-                            <div className=" border-solid border-2 border-black flex flex-col justify-center items-center mt-8  h-16 w-48">
-                                <h1 className=" "> Explore Options</h1>
-                            </div>
+
+                            <a onClick={() => setClick(!Click)} className=" border-solid border-2 border-black flex flex-col justify-center items-center mt-8 
+                            h-16 w-48 bg-yellow-400 hover:bg-yellow-500" href="/Porfolio">Explore Options</a>
                             
 
                     </div>
@@ -38,11 +42,10 @@ export default function Service(){
 
                         <h2> Merging calming Swedish massage movements with gentle stone warmth, this distinctive therapy genuinely elevates massage sessions to tranquil levels of unprecedented remedial efficacy. 
                             Suitable for those experiencing stress or muscle discomfort, it offers a restorative and relaxing journey.</h2>
-                        <div className=" border-solid border-2 border-black flex flex-col justify-center items-center mt-8  h-16 w-48">
-                            <h1 className=" "> Explore Options</h1>
-                    </div>
                         
-
+                        <a onClick={() => setClick(!Click)} className=" border-solid border-2 border-black flex flex-col justify-center items-center mt-8 
+                         h-16 w-48 bg-yellow-400 hover:bg-yellow-500" href="/Porfolio">Explore Options</a>
+                         
                     </div>
                         
                 </div>
