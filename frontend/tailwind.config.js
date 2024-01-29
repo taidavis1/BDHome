@@ -26,6 +26,7 @@ module.exports = {
         'PlayFair': ['Playfair Display', 'serif'],
         'Dancing': ['Dancing Script', 'cursive'],
         'FiraFont': ['Fira Sans', 'sans-serif'],
+        'Marcok': ['Marcellus', 'serif'],
       },
       colors:{
         'ser-color': '#ffe4b0',

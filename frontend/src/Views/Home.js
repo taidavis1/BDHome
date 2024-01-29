@@ -24,7 +24,7 @@ export default function Home(){
     return (
         <section className="relative">
             <CarouselHome />
-            <div className="bg-[#fefeff] text-black p-5 space-y-2 lg:space-y-5 lg:p-12">
+            <div className="bg-slate-200/60 text-black p-5 space-y-2 lg:space-y-5 lg:p-12">
                 <div className=" flex mt-4 flex-col justify-center text-center">
                     <h1 className="uppercase text-3xl lg:text-4xl">About Us</h1>
                     <span className=" italic text-[#e6b54e] lg:text-xl">BD Home Group, Inc New Construction</span>

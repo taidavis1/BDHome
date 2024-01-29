@@ -9,7 +9,7 @@ export default function Service(){
 					<h2 className=" lg:mt-44 mt-28">Our Services</h2>
 				</div>
             </div>
-            <div className="md:space-y-12 ">
+            <div className="">
                 <div className="grid lg:grid-cols-2 max-w-screen-xl mx-auto p-3 lg:p-8 gap-8 cursor-pointer">
                     <div className="shadow-lg lg:pb-6 pb-5 rounded-lg space-y-4 ease-in-out transition-all duration-1000 lg:hover:scale-105">
                         <div className="lg:p-4">
