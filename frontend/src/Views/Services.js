@@ -21,9 +21,10 @@ export default function Service(){
                             </div>
                             <div className="lg:w-3/4 lg:px-0 px-5">
                                 <span className="font-Lora">
-                                    Merging calming Swedish massage movements with gentle stone warmth, 
-                                    this distinctive therapy genuinely elevates massage sessions to tranquil levels of unprecedented remedial efficacy. 
-                                    Suitable for those experiencing stress or muscle discomfort, it offers a restorative and relaxing journey
+                                Discover the excellence in residential construction with BD Home Group, 
+                                your trusted partner in San Jose and the Bay Area. Specializing in new houses, ADUs, 
+                                and home additions, we bring a blend of expertise and creativity to every project. Our fully licensed team ensures each home is a masterpiece of comfort and style, offering free consultations 
+                                to tailor every detail to your lifestyle.
                                 </span>
                             </div>
                         </div>
@@ -43,9 +44,10 @@ export default function Service(){
                             </div>
                             <div className="lg:w-3/4 lg:px-0 px-5">
                                 <span className="font-Lora">
-                                    Merging calming Swedish massage movements with gentle stone warmth, 
-                                    this distinctive therapy genuinely elevates massage sessions to tranquil levels of unprecedented remedial efficacy. 
-                                    Suitable for those experiencing stress or muscle discomfort, it offers a restorative and relaxing journey
+                                    Elevate your business with BD Home Group's bespoke commercial construction services in San Jose and the Bay Area. 
+                                    Renowned for crafting exceptional restaurants, salons,.. our certified team works diligently 
+                                    to transform your vision into a vibrant business space. We prioritize quality and efficiency, 
+                                    ensuring every project is an embodiment of your brand's identity. 
                                 </span>
                             </div>
                         </div>
@@ -58,6 +60,5 @@ export default function Service(){
                 </div>
             </div>
         </section>
-
     )
 }
