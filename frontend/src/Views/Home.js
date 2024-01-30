@@ -12,17 +12,22 @@ import test2 from "../img/test2.jpg";
 
 export default function Home(){
 
-    const ChangeUrl = (name) => {
-        window.location.href = (`/Porfolio/#${name}`);
+    const ChangeUrl = (name , url) => {
+        if (url === "Porfolio"){
+            window.location.href = (`/${url}/#${name}`);
+        }
+        else{
+            window.location.href = (`/${url}`);
+        }
     }
 
     return (
         <section className="relative">
             <CarouselHome />
-            <div className="bg-[#fefeff] text-black p-5 space-y-2 lg:space-y-5 lg:p-12">
+            <div className="bg-slate-200/60 text-black p-5 space-y-2 lg:space-y-5 lg:p-12">
                 <div className=" flex mt-4 flex-col justify-center text-center">
                     <h1 className="uppercase text-3xl lg:text-4xl">About Us</h1>
-                    <span className=" font-thin lg:text-xl">BD Home Group, Inc New Construction</span>
+                    <span className=" italic text-[#e6b54e] lg:text-xl">BD Home Group, Inc New Construction</span>
                 </div>
                 <div className="mx-auto max-w-screen-xl cursor-pointer">
                     <div className=" flex space-y-2 font-sans lg:space-y-4 items-center lg:text-xl text-lg flex-col justify-center text-center">
@@ -69,7 +74,7 @@ export default function Home(){
                     </div>
                 </div>
                 <div className="flex justify-center">
-                    <button className= "shadow-md hover:bg-[#e6b54e] group cursor-pointer hover:text-white px-4 w-[250px] py-3 border-[#e6b54e] border-2 capitalize">
+                    <button onClick={() => ChangeUrl("" , "Services")} className= "shadow-md hover:bg-[#e6b54e] group cursor-pointer hover:text-white px-4 w-[250px] py-3 border-[#e6b54e] border-2 capitalize">
                         View Services
                     </button>
                 </div>
@@ -83,7 +88,7 @@ export default function Home(){
                 <div className="lg:p-4 text-white mx-auto max-w-screen-xl cursor-pointer">
                     <div className=" grid ml-0 lg:ml-6 lg:grid-cols-3 lg:gap-0 gap-6 lg:place-items-center">
                         <div className="lg:p-4">
-                            <div onClick={() => ChangeUrl("San Jose")} className=" flex sticky lg:hidden">
+                            <div onClick={() => ChangeUrl("San Jose" , "Porfolio")} className=" flex sticky lg:hidden">
                                 <img alt="#" className="" src={bathroom} />
                                 <div className=" absolute p-1 inset-0 z-10 flex flex-col justify-end opacity-100">
                                     <div className="ml-3 text-xl">
@@ -95,7 +100,7 @@ export default function Home(){
                                     </div>
                                 </div>
                             </div>
-                            <div onClick={() => ChangeUrl("San Jose")} className="sticky lg:block hidden">
+                            <div onClick={() => ChangeUrl("San Jose" , "Porfolio")} className="sticky lg:block hidden">
                                 <img alt="#" className="" src={bathroom} />
                                 <div className=" absolute p-8 inset-0 z-10 bg-black flex flex-col justify-end opacity-0 hover:opacity-100 ease-linear duration-500 transition-all bg-opacity-50">
                                     <div className="ml-3 text-2xl">
@@ -163,7 +168,7 @@ export default function Home(){
                     </div>
                 </div>
                 <div className="flex justify-center">
-                    <button onClick={() => ChangeUrl('')} className= "hover:bg-[#e6b54e] hover:text-white group cursor-pointer px-4 w-[250px] py-3 border-[#e6b54e] border-2 capitalize">
+                    <button onClick={() => ChangeUrl('' , 'Porfolio')} className= "hover:bg-[#e6b54e] hover:text-white group cursor-pointer px-4 w-[250px] py-3 border-[#e6b54e] border-2 capitalize">
                         View Porfolio
                     </button>
                 </div>

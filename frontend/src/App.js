@@ -14,7 +14,7 @@ function App() {
         <Route path = '/' element = {<Home />} />
         <Route path = '/Services' element = {<Service />} />
         <Route path = '/Porfolio' element = {<Porfolio />} />
-        <Route path="*" element={<Navigate to="/" />} />
+        {/* <Route path="*" element={<Navigate to="/" />} /> */}
       </Routes>
       <FloatBtn />
       <Footer />

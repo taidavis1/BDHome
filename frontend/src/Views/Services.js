@@ -1,57 +1,68 @@
 import {React , useState} from "react";
 
-import framing from "../img/img-services/framing-house.png";
-
-import Button from "../Components/Button.js"
-
+import firstimg from "../img/img-services/1.png";
+import secondimg from "../img/img-services/2.png";
 export default function Service(){
 
-    const [Click , setClick] = useState(false);
+    // const [Click , setClick] = useState(false);
 
     return (
-        <section className="bg-white w-full space-y-8">
+        <section className="bg-white w-full space-y-2 lg:space-y-4">
             <div className="w-screen h-screen pb-12 bg-bgservices relative bg-center bg-no-repeat bg-cover lg:pb-40">
-				<div className="flex bg-black items-center bg-opacity-25 h-screen w-full justify-center tracking-wide cursor-pointer text-white text-4xl lg:text-6xl italic ">
+				<div className="flex bg-black items-center bg-opacity-50 h-screen justify-center tracking-wide cursor-pointer text-white text-4xl lg:text-6xl italic ">
 					<h2 className=" lg:mt-44 mt-28">Our Services</h2>
 				</div>
             </div>
-            <div className=" grid lg:grid-cols-2 max-w-screen-xl mx-auto p-4 gap-4">
 
-                <div className="border-solid border-black border-2 p-10 py-64text-center text-xl ">
-
-                    <img src={framing} className="" alt="logo"/>
-
-                    <div className=" flex flex-col justify-center text-center items-center">
-                            <h1 className="mt-12 mb-4 font-bold"> Residential Property Constuction</h1>
-
-                            <h2> Merging calming Swedish massage movements with gentle stone warmth, this distinctive therapy genuinely elevates massage sessions to tranquil levels of unprecedented remedial efficacy. 
-                                Suitable for those experiencing stress or muscle discomfort, it offers a restorative and relaxing journey.</h2>
-
-                            <a onClick={() => setClick(!Click)} className=" border-solid border-2 border-black flex flex-col justify-center items-center mt-8 
-                            h-16 w-48 bg-yellow-400 hover:bg-yellow-500" href="/Porfolio">Explore Options</a>
-                            
-
+            <div className="">
+                <div className="grid lg:grid-cols-2 max-w-screen-xl mx-auto p-3 lg:p-8 gap-8 cursor-pointer">
+                    <div className="shadow-lg lg:pb-6 pb-5 rounded-lg space-y-4 ease-in-out transition-all duration-1000 lg:hover:scale-105">
+                        <div className="lg:p-4">
+                            <img src={firstimg} alt="" className="h-full lg:rounded-lg w-full" />
+                        </div>
+                        <div className=" flex flex-col justify-center text-center items-center">
+                            <div>
+                                <h1 className="text-[#010a8b] font-Catamaran text-2xl lg:text-3xl text-center">Residential Property Constuction</h1>
+                            </div>
+                            <div className="lg:w-3/4 lg:px-0 px-5">
+                                <span className="font-Lora">
+                                    Merging calming Swedish massage movements with gentle stone warmth, 
+                                    this distinctive therapy genuinely elevates massage sessions to tranquil levels of unprecedented remedial efficacy. 
+                                    Suitable for those experiencing stress or muscle discomfort, it offers a restorative and relaxing journey
+                                </span>
+                            </div>
+                        </div>
+                        <div className="flex justify-center">
+                            <button className="hover:shadow-lg  hover:bg-[#e6b54e] hover:text-white ease-in-out delay-100 duration-150 md:text-xl 
+                            text-black border-2 
+                            border-[#e6b54e] text-lg py-3  group cursor-pointer px-12 md:tracking-wide">Contact Us</button>
+                        </div>
                     </div>
-                </div>
-                <div className="border-solid border-2 border-black p-10 text-center text-xl ">
-                    
-                    <img src={framing} className="" alt="logo"/>
-
-                    <div className=" flex flex-col justify-center text-center items-center">
-                        <h1 className="mt-12 mb-4 font-bold"> Commercial Property Constuction</h1>
-
-                        <h2> Merging calming Swedish massage movements with gentle stone warmth, this distinctive therapy genuinely elevates massage sessions to tranquil levels of unprecedented remedial efficacy. 
-                            Suitable for those experiencing stress or muscle discomfort, it offers a restorative and relaxing journey.</h2>
-                        
-                        <a onClick={() => setClick(!Click)} className=" border-solid border-2 border-black flex flex-col justify-center items-center mt-8 
-                         h-16 w-48 bg-yellow-400 hover:bg-yellow-500" href="/Porfolio">Explore Options</a>
-                         
+                    <div className="shadow-lg lg:pb-6 pb-5 rounded-lg space-y-4 ease-in-out transition-all duration-1000 lg:hover:scale-105">
+                        <div className="lg:p-4">
+                            <img src={secondimg} alt="" className="h-full lg:rounded-lg w-full" />
+                        </div>
+                        <div className=" flex flex-col justify-center text-center items-center">
+                            <div>
+                                <h1 className="text-[#010a8b] font-Catamaran text-2xl lg:text-3xl text-center">Commercial Property Constuction</h1>
+                            </div>
+                            <div className="lg:w-3/4 lg:px-0 px-5">
+                                <span className="font-Lora">
+                                    Merging calming Swedish massage movements with gentle stone warmth, 
+                                    this distinctive therapy genuinely elevates massage sessions to tranquil levels of unprecedented remedial efficacy. 
+                                    Suitable for those experiencing stress or muscle discomfort, it offers a restorative and relaxing journey
+                                </span>
+                            </div>
+                        </div>
+                        <div className="flex justify-center">
+                            <button className="hover:shadow-lg  hover:bg-[#e6b54e] hover:text-white ease-in-out delay-100 duration-150 md:text-xl 
+                            text-black border-2 
+                            border-[#e6b54e] text-lg py-3  group cursor-pointer px-12 md:tracking-wide">Contact Us</button>
+                        </div>
                     </div>
-                        
                 </div>
             </div>
         </section>
-
 
     )
 }
