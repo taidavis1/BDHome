@@ -3,6 +3,7 @@ import porfolio from "../Components/Data.js";
 import {Gallery , Item, useGallery} from "react-photoswipe-gallery";
 import { faArrowDown, faForward, faXmark } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {Fade} from "react-awesome-reveal";
 import 'photoswipe/dist/photoswipe.css';
 
 const GalleryContent = (props) => {
@@ -63,9 +64,9 @@ function Porfolio (){
 			{data.length === 0? 
 				(
 					porfolio.map((por) => (
-						<>  
-							<div key={por.id} className="flex sticky top-0 justify-center text-center">
-								<div onClick={() => handleBtn(por.id)} id="SanJose" className=" rounded-xl lg:hidden block bg-[#e6b54e] mx-4 cursor-pointer text-white text-xl w-full py-4">
+						<div className="space-y-3">
+							<div id={por.placeName} key={por.id} className="flex justify-center text-center">
+								<div onClick={() => handleBtn(por.id)} className="rounded-xl lg:hidden block bg-[#e6b54e] mx-4 cursor-pointer text-white text-xl w-full py-4">
 									<div className=" flex space-x-2 justify-center text-center items-center">
 										<h1 className="">{por.placeName}</h1>
 										{!isClick[por.id]? 
@@ -74,37 +75,40 @@ function Porfolio (){
 										}
 									</div>
 								</div>
-								<div id={por.placeName} className=" rounded-xl bg-[#e6b54e] cursor-pointer hidden lg:block text-white text-2xl w-[280px] py-4">
+								<div className=" shadow-lg rounded-xl bg-[#e6b54e] cursor-pointer hidden lg:block text-white text-2xl w-[280px] py-4">
 									<h1 className="">{por.placeName}</h1>
 								</div>
 							</div>
 							{isClick[por.id] && (
+								<Fade duration={600} delay={100}>
 								<div className="text-white lg:hidden mx-2 lg:mx-auto max-w-screen-2xl p-2 cursor-pointer">
-									<div className="grid ml-0 lg:ml-6 gap-4 place-items-center lg:grid-cols-3 lg:gap-6">
-										{por.service.map((p) => (
-											<div key={p.id} onClick={() => openGalleryFolder(p.folderUrl)} className="sticky">
-												<img alt="#" className="" src={p.firstImg} />
-												<div className=" absolute px-4 z-10 inset-2 flex flex-col justify-end opacity-100">
-													<div className=" bg-black/20 p-1 lg:p-4">
-														<div className="lg:text-xl">
-															<h1>{p.name}</h1>
-														</div>
-														<div className=" flex items-center text-sm lg:text-lg space-x-1">
-															<span className=" lg:font-thin lg:text-white text-white/90">View More</span>
-															<FontAwesomeIcon className=" lg:hidden block text-sm text-gray-200" icon={faForward} />
+										<div className="grid ml-0 lg:ml-6 gap-4 place-items-center lg:grid-cols-3 lg:gap-6">
+											{por.service.map((p) => (
+												<div key={p.id} onClick={() => openGalleryFolder(p.folderUrl)} className="sticky">
+													<img alt="#" className=" rounded-lg" src={p.firstImg} />
+													<div className=" absolute px-4 z-10 inset-2 flex flex-col justify-end opacity-100">
+														<div className=" bg-black/20 p-1 lg:p-4">
+															<div className="lg:text-xl">
+																<h1>{p.name}</h1>
+															</div>
+															<div className=" flex items-center text-sm lg:text-lg space-x-1">
+																<span className=" lg:font-thin lg:text-white text-white/90">View More</span>
+																<FontAwesomeIcon className=" lg:hidden block text-sm text-gray-200" icon={faForward} />
+															</div>
 														</div>
 													</div>
 												</div>
-											</div>
-										))}
+											))}
+										</div>
 									</div>
-								</div>
+								</Fade>
 							)}
 							<div className="text-white hidden lg:block mx-auto max-w-screen-2xl p-2 cursor-pointer">
 								<div className="grid ml-6 place-items-center grid-cols-3 gap-6">
 									{por.service.map((p) => (
-										<div key={p.id} onClick={() => openGalleryFolder(p.folderUrl)} className="sticky">
-											<img alt="#" className="" src={p.firstImg} />
+										<div key={p.id} onClick={() => openGalleryFolder(p.folderUrl)} 
+										className="sticky hover:opacity-60 duration-200 delay-100 ease-in-out transition-all">
+											<img alt="#" className=" rounded-lg" src={p.firstImg} />
 											<div className=" absolute px-4 z-10 inset-2 flex flex-col justify-end opacity-100">
 												<div className=" bg-black/20 p-4">
 													<div className="lg:text-xl">
@@ -120,10 +124,10 @@ function Porfolio (){
 									))}
 								</div>
 							</div>
-						</>
+						</div>
 					))
 				): (
-					<div className = "overscroll-none overflow-hidden">
+					<div className = "overscroll-none sticky overflow-hidden">
 						<Gallery onOpen={onOpen} options={options}>
 							<GalleryContent data = {data}/>
 						</Gallery>
@@ -133,5 +137,4 @@ function Porfolio (){
         </section>
     );
 };
-
 export default Porfolio;
