@@ -1,7 +1,11 @@
-import React from "react";
+import {React , useState} from "react";
+
 import firstimg from "../img/img-services/1.png";
 import secondimg from "../img/img-services/2.png";
 export default function Service(){
+
+    // const [Click , setClick] = useState(false);
+
     return (
         <section className="bg-white w-full space-y-2 lg:space-y-4">
             <div className="w-screen h-screen pb-12 bg-bgservices relative bg-center bg-no-repeat bg-cover lg:pb-40">
@@ -9,11 +13,12 @@ export default function Service(){
 					<h2 className=" lg:mt-44 mt-28">Our Services</h2>
 				</div>
             </div>
+
             <div className="">
                 <div className="grid lg:grid-cols-2 max-w-screen-xl mx-auto p-3 lg:p-8 gap-8 cursor-pointer">
                     <div className="shadow-lg lg:pb-6 pb-5 rounded-lg space-y-4 ease-in-out transition-all duration-1000 lg:hover:scale-105">
                         <div className="lg:p-4">
-                            <img src={firstimg} className="h-full lg:rounded-lg w-full" />
+                            <img src={firstimg} alt="" className="h-full lg:rounded-lg w-full" />
                         </div>
                         <div className=" flex flex-col justify-center text-center items-center">
                             <div>
@@ -36,7 +41,7 @@ export default function Service(){
                     </div>
                     <div className="shadow-lg lg:pb-6 pb-5 rounded-lg space-y-4 ease-in-out transition-all duration-1000 lg:hover:scale-105">
                         <div className="lg:p-4">
-                            <img src={secondimg} className="h-full lg:rounded-lg w-full" />
+                            <img src={secondimg} alt="" className="h-full lg:rounded-lg w-full" />
                         </div>
                         <div className=" flex flex-col justify-center text-center items-center">
                             <div>

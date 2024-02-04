@@ -4,6 +4,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {faFacebookF , faInstagram} from "@fortawesome/free-brands-svg-icons";
 import {faBarsStaggered ,faXmark , faPhone , faLocationDot} from "@fortawesome/free-solid-svg-icons"
 
+
 function Navbar(){
     const [Click , setClick] = useState(false);
     const [Scroll , SetScroll] = useState(false);
@@ -16,12 +17,16 @@ function Navbar(){
     };
     window.addEventListener('scroll' , Change_color)
     const Icon_Style = {fontSize: '22',};
+
     return (
         <div className="">
             <nav className= {Scroll?"bg-[#010a8b] flex justify-between p-4 lg:justify-around lg:py-4 shadow-md w-full fixed top-0 left-0 right-0 z-10 ":
             "flex bg-[#010a8b] text-white justify-between p-4 lg:justify-around lg:py-4 bg-none w-full fixed top-0 left-0 right-0 z-10"}>
                 <div className="flex rounded-full items-center space-x-1 cursor-pointer group">
-                    <img src={Logo1} alt="" className={!Scroll?"lg:hidden w-20":"w-28 md:w-28 group-hover:opacity-70"}/>
+                    <a onClick={() => setClick(!Click)} href="/">
+                        <img src={Logo1} alt="" className={!Scroll?"lg:hidden w-20":"w-28 md:w-28 group-hover:opacity-70"}/>
+                    </a>
+                    
                 </div>
                 <div className={Scroll?"lg:hidden text-3xl cursor-pointer flex items-center text-black space-x-4": "lg:hidden space-x-4 blkock text-3xl cursor-pointer flex items-center text-[#3C6CA8]"}>
                     <div onClick={() => window.location.href = "tel:6696996999"} className={`${Scroll? "bg-green-400" : "border-0" } p-2 rounded-full`}>
@@ -30,7 +35,7 @@ function Navbar(){
                     <div onClick={(e) => {e.preventDefault(); window.open("https://www.google.com/maps/dir/37.3312986,-120.4933619/1315+Piedmont+Rd,+San+Jose,+CA+95132/@37.3683678,-122.5394276,8z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x808fcdd1d23c37c1:0xb7232544977ba12f!2m2!1d-121.8479968!2d37.4004538?entry=ttu" , '_blank')}} className={`${Scroll? "" : "border-0" } p-2 rounded-full`}>
                         <FontAwesomeIcon className= "flex !text-xl text-sky-400" icon = {faLocationDot}/>
                     </div>
-                    <div onClick={() => setClick(!Click)} className={Scroll?"lg:hidden text-3xl cursor-pointer flex items-center text-black space-x-4": "lg:hidden space-x-4 blkock text-3xl cursor-pointer flex items-center text-[#3C6CA8]"}>
+                    <div onClick={() => setClick(!Click)} className={Scroll?"lg:hidden text-3xl cursor-/ointer flex items-center text-black space-x-4": "lg:hidden space-x-4 blkock text-3xl cursor-pointer flex items-center text-[#3C6CA8]"}>
                         {!Click? 
                             <FontAwesomeIcon className=" text-orange-400" icon = {faBarsStaggered}/> : 
                             <FontAwesomeIcon className=" text-orange-400" icon={faXmark} />
@@ -39,15 +44,21 @@ function Navbar(){
                 </div>
                 <div className= {Scroll? "lg:flex text-md hidden items-center space-x-12  text-xl capitalize text-white" : 
                 "lg:flex text-md hidden items-center space-x-12 text-xl capitalize text-white" }>
-                    <a className="flex " href = "/">
-                        Home
-                    </a>
-                    <a className="flex  " href = "/Services">
-                        Services
-                    </a>
-                    <a className="flex  " href = "/Porfolio">
-                       Porfolio
-                    </a>
+                    
+
+                        <a onClick={() => setClick(!Click)} className={Scroll? " bg-[#010a8b] py-12 p-4 hover:bg-[#131638]" : " bg-[#010a8b] py-6 hover:bg-[#131638] p-4 "}href = "/">
+                            Home
+                        </a>
+                   
+                        <a onClick={() => setClick(!Click)} className={Scroll? " bg-[#010a8b] py-12 p-4 hover:bg-[#131638]" : " bg-[#010a8b] py-6 hover:bg-[#131638] p-4 "}href = "/Services">
+                            Services
+                        </a>
+                    
+                        <a onClick={() => setClick(!Click)} className={Scroll? " bg-[#010a8b] py-12 p-4 hover:bg-[#131638]" : " bg-[#010a8b] py-6 hover:bg-[#131638] p-4 "}href = "/Porfolio">
+                            Portfolio
+                        </a>
+
+                    
                 </div>
                 <div className = {Scroll? "hidden lg:flex items-center space-x-12 text-white": "hidden lg:flex items-center space-x-12 text-white"}>
                     <a className="cursor-pointer flex" target="_blank" rel="noreferrer" href = "https://www.instagram.com/nicespasac/">
