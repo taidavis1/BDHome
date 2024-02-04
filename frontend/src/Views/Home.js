@@ -2,10 +2,9 @@ import React from "react";
 import CarouselHome from "../Components/Carousel";
 import icon1 from "../img/shovel_icon.png";
 import icon2 from "../img/hammer_icon.png";
-import test1 from "../img/test1.jpg";
-import test2 from "../img/test2.jpg";
 import {Fade , Slide} from "react-awesome-reveal";
 import SwiperPro from "../Components/SwiperPro";
+import SwiperReview from "../Components/SwiperReview";
 
 export default function Home(){
     const ChangeUrl = (name , url) => {
@@ -104,44 +103,9 @@ export default function Home(){
                     <span className=" font-thin lg:text-xl">Don't Just Take Our Words</span>
                 </div>
                 <div className="lg:p-4 mx-auto max-w-screen-xl cursor-pointer">
-                    <div className=" grid lg:mt-10 ml-0 lg:ml-6 lg:grid-cols-2 gap-6 lg:gap-8 lg:place-items-center">
-                        <Slide>
-                            <div className="shadow-md border-2 p-8 lg:p-12">
-                                <div className=" flex lg:space-y-8 space-y-6 flex-col sticky items-center justify-center text-center">
-                                    <img alt="#" src={test1} className=" w-20 lg:absolute lg:-top-24 rounded-full" />
-                                    <div className=" flex flex-col">
-                                        <h1 className=" text-2xl">Jane Doe</h1>
-                                        <span className=" font-thin lg:text-md">Home Owner</span>
-                                    </div>
-                                    <div className="">
-                                        <span>
-                                            Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however 
-                                            a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar. The Big Oxmox advised her not to do so, 
-                                            because there were thousands of bad Commas, wild Question Marks and devious Semikoli, but the Little Blind Text didn’t listen. 
-                                        </span>
-                                    </div>
-                                </div>
-                            </div>
-                        </Slide>
-                        <Slide>
-                            <div className="shadow-md border-2 p-8 lg:p-12">
-                                <div className=" flex lg:space-y-8 space-y-6 flex-col sticky items-center justify-center text-center">
-                                    <img alt="#" src={test2} className=" w-20 lg:absolute lg:-top-24 rounded-full" />
-                                    <div className=" flex flex-col">
-                                        <h1 className=" text-2xl">Jane Doe</h1>
-                                        <span className=" font-thin lg:text-md">Home Owner</span>
-                                    </div>
-                                    <div className="">
-                                        <span>
-                                            Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however 
-                                            a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar. The Big Oxmox advised her not to do so, 
-                                            because there were thousands of bad Commas, wild Question Marks and devious Semikoli, but the Little Blind Text didn’t listen. 
-                                        </span>
-                                    </div>
-                                </div>
-                            </div>
-                        </Slide>
-                    </div>
+                    <Slide>
+                        <SwiperReview />
+                    </Slide>
                 </div>
             </div>
 

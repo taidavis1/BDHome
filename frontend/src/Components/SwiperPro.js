@@ -1,6 +1,6 @@
 import {Swiper , SwiperSlide} from 'swiper/react';
 import 'swiper/css';
-import {Autoplay, EffectCards, EffectCoverflow, EffectFade, FreeMode} from "swiper/modules";
+import {Autoplay,FreeMode} from "swiper/modules";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faForward } from "@fortawesome/free-solid-svg-icons";
 import porfolio from "../Components/Data";
