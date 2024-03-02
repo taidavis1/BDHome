@@ -1,6 +1,6 @@
 import {Swiper , SwiperSlide} from 'swiper/react';
 import 'swiper/css';
-import {Autoplay,FreeMode} from "swiper/modules";
+import {Autoplay} from "swiper/modules";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faForward } from "@fortawesome/free-solid-svg-icons";
 import porfolio from "../Components/Data";
@@ -27,7 +27,6 @@ export default function SwiperPro() {
                     spaceBetween: 15
                 }
             }}
-            freeMode = {true}
             autoplay = {{
                 delay: 2500,
                 disableOnInteraction: false,
@@ -35,7 +34,7 @@ export default function SwiperPro() {
             pagination = {{
                 clickable: true
             }}
-            modules={[FreeMode , Autoplay]}
+            modules={[Autoplay]}
         >
             {porfolio.map((s) => {
                 switch (s.placeName){

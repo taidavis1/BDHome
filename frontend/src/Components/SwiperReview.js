@@ -1,6 +1,6 @@
 import {Swiper , SwiperSlide} from 'swiper/react';
 import 'swiper/css';
-import {Autoplay,FreeMode,  Navigation} from "swiper/modules";
+import {Autoplay,  Navigation} from "swiper/modules";
 import ReviewData from "../Components/ReviewData.js";
 import 'swiper/css/navigation';
 import Stars from './Star.js';
@@ -18,7 +18,6 @@ export default function SwiperReview(){
                     spaceBetween: 15
                 }
             }}
-            freeMode = {true}
             autoplay = {{
                 delay: 5000,
                 disableOnInteraction: false,
@@ -26,7 +25,7 @@ export default function SwiperReview(){
             pagination = {{
                 clickable: true
             }}
-            modules={[FreeMode , Autoplay , Navigation]}
+            modules={[Autoplay , Navigation]}
         >
             {ReviewData.map((r) => (
                 <SwiperSlide key = {r.id}>
