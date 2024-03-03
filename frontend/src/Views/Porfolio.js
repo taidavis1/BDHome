@@ -14,7 +14,7 @@ const GalleryContent = (props) => {
 
     return (
         props.data.map((fname, index) => (
-            <Item width="1600" height="1000" key={index} original={fname} alt="#">
+            <Item className = "" width="1600" height="1200" key={index} original={fname} alt="#">
                 {({ref}) => (
                     <img ref={ref} className="hidden" alt="#" src={fname} />
                 )}

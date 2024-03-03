@@ -37,6 +37,9 @@ module.exports = {
         'bg1': "url('/src/img/bg1.png')",
         'bgservices': "url('/src/img/img-services/framing-house.png')",
         'bg2': "url('/src/img/bg_porfolio.png')",
+        'bg3': "url('/src/img/img1.jpg')",
+        'bg4': "url('/src/img/bg1.png')",
+        'bg5': "url('/src/img/onstruction.png')",
       }
     },
   },
