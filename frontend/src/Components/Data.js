@@ -131,6 +131,19 @@ const porfolio = [
             },
         ]
     },
+    {
+        id: 7,
+        placeName: 'Gilroy',
+        img:require('../img/img-sub/Porfolio/7.png'),
+        service: [
+            {
+                id: 1,
+                name: 'Adu',
+                firstImg: require('../img/gilroy/1.png'),
+                folderUrl: require.context('../img/gilroy/' , false, /\.(png|jpg|jpeg|JPG)$/)
+            },
+        ]
+    },
 ];
 
 export default porfolio;
