@@ -42,7 +42,7 @@ const styles = StyleSheet.create({
     },
     header: {
         backgroundColor: '#010a8b',
-        paddingHorizontal: 24,
+        paddingHorizontal: 30,
         flexDirection: 'row',
         justifyContent: 'space-between',
         alignItems: 'center',
@@ -101,23 +101,12 @@ const styles = StyleSheet.create({
 
 });
 
-const InvoiceDocument = ({ data, itemsData, total}) => (
+const InvoiceDocument = ({ data, itemsData, total, type = 'Invoices'}) => (
     <Document>
         <Page pageNumber={1} style={styles.page} size="A4">
             <View style={styles.header}>
                 <View style={styles.viewHeader}>
-                    <Image src={Logo} style={{ width: '7rem', marginHorizontal: '4px'}} />
-                    <View>
-                        <Text style={{marginBottom: '4px'}}>
-                            3811 McKee Road, San Jose, CA 95127
-                        </Text>
-                        <Text style={{marginBottom: '4px'}}>
-                            Phone: (669) 699-6999
-                        </Text>
-                        <Text>
-                            Email: contact@bdhomegroup.us
-                        </Text>
-                    </View>
+                    <Image src={Logo} style={{ width: '10rem', marginHorizontal: '4px'}} />
                 </View>
                 <View>
                     <Text style={{
@@ -125,7 +114,7 @@ const InvoiceDocument = ({ data, itemsData, total}) => (
                         lineHeight: '1.5rem',
                         fontWeight: 'bold',
                         fontFamily: 'Lora',
-                    }}>Invoices</Text>
+                    }}>{type}</Text>
                 </View>
             </View>
 
@@ -195,6 +184,29 @@ const InvoiceDocument = ({ data, itemsData, total}) => (
                 }}
             >
                 <Text>Thank You !</Text>
+            </View>
+
+            <View fixed style={{
+                position: 'absolute',
+                bottom:24,
+                left: 14,
+                padding: '10px',
+                fontSize: '14px'
+            }} >
+                <View>
+                    <Text style={{marginBottom: '4px'}}>
+                        Address: 3811 McKee Road, San Jose, CA 95127
+                    </Text>
+                    <Text style={{marginBottom: '4px'}}>
+                        Phone: (669) 699-6999
+                    </Text>
+                    <Text style={{marginBottom: '4px'}}>
+                        Email: contact@bdhomegroup.us
+                    </Text>
+                    <Text>
+                        Website: bdhomegroup.info
+                    </Text>
+                </View>
             </View>
         </Page>
     </Document>
@@ -415,7 +427,7 @@ export const Invoices = () => {
 
             {/* Mobile Devices  */}
 
-            <div className=' lg:hidden px-4 mb-6'>
+            <div className=' lg:hidden flex justify-center space-x-4 mb-6'>
                 <PDFDownloadLink 
                     document={<InvoiceDocument data={Invoice} itemsData={itemsData} total={CalculateTotal()} />}
                     fileName='invoice.pdf'
@@ -430,6 +442,23 @@ export const Invoices = () => {
 
                         <button className=' bg-emerald-600 px-4 rounded-lg shadow-lg py-2 text-white'>
                             <span>Download Invoices</span>
+                        </button>
+                    }
+                </PDFDownloadLink>
+                <PDFDownloadLink 
+                    document={<InvoiceDocument type='Receipt' data={Invoice} itemsData={itemsData} total={CalculateTotal()} />}
+                    fileName='invoice.pdf'
+                >
+                    {({ blob, url, loading, error }) =>
+
+                        loading ?
+
+                        <button className=' bg-blue-600 px-4 rounded-lg shadow-lg py-2 text-white'>
+                            <span>Loading Receipt....</span>
+                        </button>:
+
+                        <button className=' bg-blue-600 px-4 rounded-lg shadow-lg py-2 text-white'>
+                            <span>Download Receipt</span>
                         </button>
                     }
                 </PDFDownloadLink>
