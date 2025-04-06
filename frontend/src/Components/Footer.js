@@ -117,7 +117,7 @@ export default function Footer(){
                         </div>
                     </div>
                 </div>
-      
+
                 <div className="mt-12 border-t border-gray-100 pt-6">
                     <div className="text-center sm:flex sm:justify-between sm:text-left">
                         <p className="text-sm text-gray-500">

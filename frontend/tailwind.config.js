@@ -32,6 +32,7 @@ module.exports = {
         'ser-color': '#ffe4b0',
         'gold': '#ffd700',
         'blue-test': '#373b4d',
+        'invoice-blue': '#010a8b',
       },
       backgroundImage:{
         'bg1': "url('/src/img/bg1.png')",
